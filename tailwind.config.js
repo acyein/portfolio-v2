@@ -39,7 +39,7 @@ module.exports = {
                 }
             },
             backgroundImage: {
-                main: 'url("/img/bg-main.webp")',
+                'gradient-black': 'linear-gradient(344deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%)'
             }
         }
     },
