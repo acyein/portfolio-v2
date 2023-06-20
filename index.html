@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yein | Front-End Web Developer</title>
+    <title>Ang Chian Yein | Front-End Web Developer</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="css/output.css" rel="stylesheet">
 
+    <link href="css/output.css" rel="stylesheet">
+    
     <script>
         // On page load or when changing themes, best to add inline in `head` to avoid FOUC
         if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
@@ -23,8 +24,8 @@
 </head>
 
 <body class="font-primary min-h-screen bg-green-100 text-black/90 dark:bg-green-900 dark:text-green-200">
-    <div class="container min-h-screen space-y-8 sm:space-y-16 py-4 sm:p-10">
-        <nav class="flex justify-between">
+    <div class="min-h-screen space-y-8 sm:space-y-16">
+        <nav class="flex justify-between mx-auto max-w-6xl p-4 sm:p-10">
             <a href="index.html">CY</a>
             <div class="flex gap-x-20 text-base">
                 <ul class="flex justify-end items-center gap-x-10">
@@ -43,37 +44,41 @@
             </div>
         </nav>
 
-        <div class="space-y-20 sm:space-y-32">
+        <div>
+            <img src="https://placehold.co/2144x500" alt="">
+        </div>
+
+        <div class="mx-auto max-w-6xl space-y-20 sm:space-y-32 p-4 sm:p-10">
             <!-- ABOUT -->
             <section id="about" class="space-y-8">
                 <h2 class="font-secondary">About</h2>
-                <p>Hi! I'm a <strong>front-end web developer</strong> with over 2 years of experience building websites (e.g., portfolio websites and admin portals) using Bootstrap & Tailwind CSS. Currently, my aim is to boost frontend skills by developing more complex features in large scale projects.</p>
+                <p>Hi! I'm a <strong>front-end web developer</strong> with over 2 years of experience building websites including portfolio websites and CMS. My current aim is to boost my front-end skills by developing more complex features in large scale projects.</p>
                 <div class="space-y-4">
-                    <h5 class="font-secondary">Skills</h5>
-                    <ul class="flex flex-wrap gap-x-2.5 gap-y-2">
-                        <li class="flex items-center gap-2 bg-green-200 rounded px-2 py-1 dark:bg-green-600">
-                            <img src="assets/img/icons/git.svg" alt="Icon" width="16" height="16">
-                            <span class="text-sm">Git</span>
+                    <h3 class="font-secondary">Skills</h3>
+                    <ul class="flex flex-wrap gap-x-6 gap-y-2">
+                        <li class="flex items-center gap-2">
+                            <img src="assets/img/icons/git.svg" alt="Icon" width="28" height="28">
+                            <span>Git</span>
                         </li>
-                        <li class="flex items-center gap-2 bg-green-200 rounded px-2 py-1 dark:bg-green-600">
-                            <img src="assets/img/icons/sass.svg" alt="Icon" width="16" height="16">
-                            <span class="text-sm">Sass</span>
+                        <li class="flex items-center gap-2">
+                            <img src="assets/img/icons/sass.svg" alt="Icon" width="28" height="28">
+                            <span>Sass</span>
                         </li>
-                        <li class="flex items-center gap-2 bg-green-200 rounded px-2 py-1 dark:bg-green-600">
-                            <img src="assets/img/icons/bootstrap.svg" alt="Icon" width="16" height="16">
-                            <span class="text-sm">Bootstrap</span>
+                        <li class="flex items-center gap-2">
+                            <img src="assets/img/icons/bootstrap.svg" alt="Icon" width="28" height="28">
+                            <span>Bootstrap</span>
                         </li>
-                        <li class="flex items-center gap-2 bg-green-200 rounded px-2 py-1 dark:bg-green-600">
-                            <img src="assets/img/icons/tailwind.svg" alt="Icon" width="16" height="16">
-                            <span class="text-sm">Tailwind CSS</span>
+                        <li class="flex items-center gap-2">
+                            <img src="assets/img/icons/tailwind.svg" alt="Icon" width="28" height="28">
+                            <span>Tailwind CSS</span>
                         </li>
-                        <li class="flex items-center gap-2 bg-green-200 rounded px-2 py-1 dark:bg-green-600">
-                            <img src="assets/img/icons/jquery.svg" alt="Icon" width="16" height="16">
-                            <span class="text-sm">jQuery</span>
+                        <li class="flex items-center gap-2">
+                            <img src="assets/img/icons/jquery.svg" alt="Icon" width="28" height="28">
+                            <span>jQuery</span>
                         </li>
-                        <li class="flex items-center gap-2 bg-green-200 rounded px-2 py-1 dark:bg-green-600">
-                            <img src="assets/img/icons/laravel.svg" alt="Icon" width="16" height="16">
-                            <span class="text-sm">Laravel</span>
+                        <li class="flex items-center gap-2">
+                            <img src="assets/img/icons/laravel.svg" alt="Icon" width="28" height="28">
+                            <span>Laravel</span>
                         </li>
                     </ul>
                 </div>
@@ -82,55 +87,78 @@
             <!-- PROJECTS -->
             <section id="projects" class="space-y-8">
                 <h2 class="font-secondary">Projects</h2>
-
-                <!-- BLOOMING HOTEL -->
-                <div class="space-y-16 md:space-y-32">
-                    <div class="space-y-6">
-                        <p class="h5 font-secondary font-bold">
-                            1. <a href="bloominghotel.netlify.app" class="transition hover:underline ml-4">Blooming Hotel</a>
-                        </p>
-                        <div class="grid md:grid-cols-2 gap-x-16 gap-y-8">
-                            <div class="flex flex-col gap-6">
-                                <video autoplay loop>
-                                    <source src="assets/vid/blooming-hotel.webm" type="video/webm">
-                                    Sorry, your browser does not support the embedded video.
-                                </video>
-                                <div class="grid grid-cols-3 gap-3">
-                                    <div class="group/gallery overflow-hidden aspect-video">
-                                        <a data-fslightbox="project-1" href="assets/img/blooming-hotel-home.webp">
-                                            <img class="transition group-hover/gallery:scale-125" src="assets/img/blooming-hotel-home.webp" alt="Blooming Hotel home page">
-                                        </a>
-                                    </div>
-                                    <div class="group/gallery overflow-hidden aspect-video">
-                                        <a data-fslightbox="project-1" href="assets/img/blooming-hotel-about.webp">
-                                            <img class="transition group-hover/gallery:scale-125" src="assets/img/blooming-hotel-about.webp" alt="Blooming Hotel about page">
-                                        </a>
-                                    </div>
-                                    <div class="group/gallery overflow-hidden aspect-video">
-                                        <a data-fslightbox="project-1" href="assets/img/blooming-hotel-contact.webp">
-                                            <img class="transition group-hover/gallery:scale-125" src="assets/img/blooming-hotel-contact.webp" alt="Blooming Hotel contact page">
-                                        </a>
-                                    </div>
+                <div class="space-y-24 sm:space-y-28 lg:space-y-56">
+                    <!-- BLOOMING HOTEL -->
+                    <div class="grid lg:grid-cols-2 gap-6 sm:gap-10 lg:gap-16">
+                        <a href="https://bloominghotel.netlify.app/" class="tilt-effect" data-tilt data-tilt-reverse="true" target="_blank">
+                            <img src="./assets/img/blooming-hotel.webp" class="shadow-lg" alt="Preview of Blooming Hotel website">
+                        </a>
+                        <div class="space-y-5">
+                            <a href="https://bloominghotel.netlify.app/" class="h4 font-secondary font-bold underline transition hover:opacity-70 gap-2" target="_blank">Blooming Hotel</a>
+                            <div class="flex flex-col justify-center gap-y-6 sm:gap-y-8">
+                                <div class="flex justify-between items-center">
+                                    <ul class="flex flex-wrap gap-x-2.5 gap-y-2">
+                                        <li class="tag-green">HTML</li>
+                                        <li class="tag-green">CSS</li>
+                                    </ul>
+                                    <a href="https://github.com/acyein/modern-html-css/tree/master/04-HotelWebsite" target="_blank"><img src="./assets/img/icons/github.svg" alt="GitHub" width="26" height="26"></a>
+                                </div>
+                                <div class="space-y-4">
+                                    <p>A mock website that was developed with vanilla HTML and CSS.  The website design was inspired by the <a href="https://theempirebrunei.com/" class="link-green" target="_blank">The Empire Hotel's website</a>. In this project, I learnt how to use flexbox, create mobile responsive design, and optimise images for performance.</p>
+                                    <p>This project was completed as part of an online course, <a href="https://www.udemy.com/course/modern-html-css-from-the-beginning/" class="link-green" target="_blank">Modern HTML & CSS From The Beginning (Including Sass)</a>.</p>
                                 </div>
                             </div>
-                            <div class="flex flex-col justify-center gap-y-6 lg:gap-y-10">
-                                <p>A mock website developed to practise vanilla HTML and CSS in the <a href="https://www.udemy.com/course/modern-html-css-from-the-beginning/" class="link-green">Modern HTML & CSS From The Beginning (Including Sass) course</a>.</p>
-                                <ul class="flex flex-wrap gap-x-2.5 gap-y-2">
-                                    <li class="flex items-center gap-2 bg-green-200 rounded px-2 py-1 dark:bg-green-600">
-                                        <img src="assets/img/icons/html.svg" alt="Icon" width="16" height="16">
-                                        <span class="text-sm">HTML</span>
-                                    </li>
-                                    <li class="flex items-center gap-2 bg-green-200 rounded px-2 py-1 dark:bg-green-600">
-                                        <img src="assets/img/icons/css.svg" alt="Icon" width="16" height="16">
-                                        <span class="text-sm">CSS</span>
-                                    </li>
-                                </ul>
+                        </div>
+                    </div>
+
+                    <!-- ADVICE GENERATOR APP -->
+                    <div class="grid lg:grid-cols-2 gap-6 sm:gap-10 lg:gap-16">
+                        <a href="https://acyein.github.io/advice-generator-app/" class="tilt-effect" data-tilt data-tilt-reverse="true" target="_blank">
+                            <img src="./assets/img/advice-generator-app.webp" class="shadow-lg" alt="Preview of advice generator app">
+                        </a>
+                        <div class="space-y-5">
+                            <a href="https://acyein.github.io/advice-generator-app/" class="h4 font-secondary font-bold underline transition hover:opacity-70 gap-2" target="_blank">Advice Generator App</a>
+                            <div class="flex flex-col justify-center gap-y-6 sm:gap-y-8">
+                                <div class="flex justify-between items-center">
+                                    <ul class="flex flex-wrap gap-x-2.5 gap-y-2">
+                                        <li class="tag-green">HTML</li>
+                                        <li class="tag-green">Tailwind CSS</li>
+                                        <li class="tag-green">JavaScript</li>
+                                    </ul>
+                                    <a href="https://github.com/acyein/advice-generator-app" target="_blank"><img src="./assets/img/icons/github.svg" alt="GitHub" width="26" height="26"></a>
+                                </div>
+                                <div class="space-y-4">
+                                    <p>A web application that generates a new piece of advice by clicking the dice icon. I learnt how to fetch data from <a href="https://api.adviceslip.com/advice" class="link-green" target="_blank">a public API</a> and access the JSON object to get a string of advice and its ID. While data is fetching, I've added a loader and disabled the dice button.</p>
+                                <p>This project was completed as part of the <a href="https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db" class="link-green" target="_blank">Advice generator app challenge on Frontend Mentor</a>.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- NOTIFICATIONS PAGE -->
+                    <div class="grid lg:grid-cols-2 gap-6 sm:gap-10 lg:gap-16">
+                        <a href="https://notifications-page-acyein.vercel.app/" class="tilt-effect" data-tilt data-tilt-reverse="true" target="_blank">
+                            <img src="assets/img/notifications-page.webp" class="shadow-lg" alt="Preview of notifications page">
+                        </a>
+                        <div class="space-y-5">
+                            <a href="https://notifications-page-acyein.vercel.app/" class="h4 font-secondary font-bold underline transition hover:opacity-70 gap-2" target="_blank">Notifications Page</a>
+                            <div class="flex flex-col justify-center gap-y-6 sm:gap-y-8">
+                                <div class="flex justify-between items-center">
+                                    <ul class="flex flex-wrap gap-x-2.5 gap-y-2">
+                                        <li class="tag-green">Tailwind CSS</li>
+                                        <li class="tag-green">React</li>
+                                        <li class="tag-green">Next.js</li>
+                                    </ul>
+                                    <a href="https://github.com/acyein/notifications-page" target="_blank"><img src="./assets/img/icons/github.svg" alt="GitHub" width="26" height="26"></a>
+                                </div>
+                                <div class="space-y-4">
+                                    <p>A notifications page that allows users to mark unread notifications as read. When selecting 'mark all as read', it removes the active state of unread notifications and resets the total number of unread notifications to zero.</p>
+                                    <p>This project was completed as part of the <a href="https://www.frontendmentor.io/challenges/notifications-page-DqK5QAmKbC" class="link-green" target="_blank">Notifications page challenge on Frontend Mentor</a>.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- NAVBAR: BDCB? -->
-                <!-- SIDEBAR: RBPF? -->
             </section>
             
             <!-- CONTACT -->
@@ -139,16 +167,16 @@
                 <p>I am currently based in Bandar Seri Begawan, Brunei. Do reach out to me via these channels:</p>
                 <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-y-6 sm:gap-y-10">
                     <div class="flex flex-col gap-1 sm:gap-2">
-                        <span class="text-sm font-bold text-green-400">EMAIL</span>
-                        <a href="mailto:chianyein@gmail.com" class="transition hover:underline">chianyein@gmail.com</a>
+                        <p class="text-sm font-bold text-green-400">EMAIL</p>
+                        <a href="mailto:chianyein@gmail.com" class="link-green">chianyein@gmail.com</a>
                     </div>
                     <div class="flex flex-col gap-1 sm:gap-2">
-                        <span class="text-sm font-bold text-green-400">LINKEDIN</span>
-                        <a href="https://www.linkedin.com/in/angchianyein/" class="transition hover:underline">linkedin.com/in/angchianyein</a>
+                        <p class="text-sm font-bold text-green-400">LINKEDIN</p>
+                        <a href="https://www.linkedin.com/in/angchianyein/" class="link-green">linkedin.com/in/angchianyein</a>
                     </div>
                     <div class="flex flex-col gap-1 sm:gap-2">
-                        <span class="text-sm font-bold text-green-400">GITHUB</span>
-                        <a href="https://github.com/acyein" class="transition hover:underline">github.com/acyein</a>
+                        <p class="text-sm font-bold text-green-400">GITHUB</p>
+                        <a href="https://github.com/acyein" class="link-green">github.com/acyein</a>
                     </div>
                 </div>
             </section>
@@ -156,6 +184,13 @@
     </div>
 
     <script src="js/core/theme.js"></script>
-    <script src="js/plugins/fslightbox-basic-3.4.1/fslightbox.js"></script>
+    <script src="js/plugins/vanilla-tilt.js.1.8.0/vanilla-tilt.min.js"></script>
+
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelector(".tilt-effect"), {
+            max: 25,
+            speed: 400
+        });
+    </script>
 </body>
 </html>
