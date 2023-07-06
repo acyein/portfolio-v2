@@ -1290,12 +1290,11 @@ h6,
   }
 
   .dark .card {
-    background-color: rgb(0 38 26 / 0.6);
+    background-color: rgb(31 41 55 / 0.3);
   }
 
   .dark .card:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgb(0 38 26 / var(--tw-bg-opacity));
+    background-color: rgb(31 41 55 / 0.5);
   }
 }
 
@@ -1780,7 +1779,7 @@ h6,
 
 .bg-gray-900 {
   --tw-bg-opacity: 1;
-  background-color: rgb(18 18 18 / var(--tw-bg-opacity));
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
 }
 
 .bg-green-100\/30 {
@@ -1922,7 +1921,7 @@ h6,
 
 .text-gray-900 {
   --tw-text-opacity: 1;
-  color: rgb(18 18 18 / var(--tw-text-opacity));
+  color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -2030,7 +2029,7 @@ h6,
 
 .hover\:text-gray-900:hover {
   --tw-text-opacity: 1;
-  color: rgb(18 18 18 / var(--tw-text-opacity));
+  color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
 .focus\:outline-none:focus {
@@ -2116,11 +2115,6 @@ h6,
 
 .dark .dark\:bg-gray-800\/50 {
   background-color: rgb(31 41 55 / 0.5);
-}
-
-.dark .dark\:bg-gray-900 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(18 18 18 / var(--tw-bg-opacity));
 }
 
 .dark .dark\:bg-opacity-80 {
