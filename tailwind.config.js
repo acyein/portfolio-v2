@@ -21,8 +21,8 @@ module.exports = {
         },
         extend: {
             fontFamily: {
-                primary: ['Inter', 'sans-serif'],
-                secondary: ['DM Serif Text', 'serif']
+                primary: ['Cabin', 'sans-serif'],
+                secondary: ['Sniglet', 'serif'],
             },
             colors: {
                 green: {
