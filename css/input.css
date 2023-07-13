@@ -12,60 +12,71 @@
 	#header__indeterminate {
 		@apply hidden;
 	}
-	html[color-theme="dark"] #header__moon,
-	html[color-theme="light"] #header__sun,
-	html[color-theme="system"] #header__indeterminate {
+	html[color-theme='dark'] #header__moon,
+	html[color-theme='light'] #header__sun,
+	html[color-theme='system'] #header__indeterminate {
 		@apply block;
+	}
+	h1,
+	h2,
+	h3 {
+		@apply dark:text-green-100;
+	}
+	a,
+	button {
+		@apply focus-visible:rounded-sm focus-visible:outline focus-visible:outline-2 dark:focus-visible:outline-[#ffdfab];
 	}
 }
 
 @layer components {
-	h1,
-	.h1 {
-		@apply text-5xl dark:text-green-100 md:text-6xl;
-	}
-	h2,
-	.h2 {
-		@apply text-4xl dark:text-green-100 md:text-5xl;
-	}
-	h3,
-	.h3 {
-		@apply text-3xl dark:text-green-100 md:text-4xl;
-	}
-	h4,
-	.h4 {
-		@apply text-2xl dark:text-green-100 md:text-3xl;
-	}
-	h5,
-	.h5 {
-		@apply text-xl dark:text-green-100 md:text-2xl;
-	}
-	h6,
-	.h6 {
-		@apply text-lg dark:text-green-100 md:text-xl;
-	}
-	.active {
-		@apply font-bold text-black dark:text-inherit;
-	}
-	.link-green {
-		@apply text-green-500 underline transition hover:text-green-400 dark:text-green-400 dark:hover:text-green-300;
+	.link-primary {
+		@apply border-b border-green-400 font-bold no-underline transition hover:border-b-2 dark:text-green-100;
 	}
 	.icon-link-black {
-		@apply transition hover:opacity-70 dark:opacity-70 dark:hover:opacity-100;
+		@apply transition hover:text-black/70 dark:text-inherit dark:hover:text-green-100;
 	}
 	.stretched-link {
 		@apply before:absolute before:left-0 before:top-0 before:z-10 before:h-full before:w-full before:content-none sm:before:content-[''];
 	}
 	.tag-green {
-		@apply flex items-center rounded-full bg-green-200 px-3 py-1 text-sm font-semibold text-green-500 dark:bg-green-600 dark:text-green-200;
+		@apply flex items-center rounded-full bg-green-200 px-3 py-1 text-sm font-bold text-green-500 transition group-hover:bg-green-100 dark:bg-green-600 dark:text-green-200 dark:group-hover:bg-green-600;
 	}
 	.card {
-		@apply relative space-y-6 rounded-lg p-0 transition after:absolute after:-top-2 after:left-2 after:-z-10 after:h-full after:w-full after:rounded-lg after:border after:border-green-300 after:bg-white/30 after:opacity-0 after:transition-all after:duration-200 after:ease-out after:content-[''] dark:after:border-green-700 dark:after:bg-transparent sm:bg-green-100 sm:px-10 sm:py-8 sm:hover:bg-green-200 sm:hover:after:opacity-100 dark:sm:bg-gray-800/30 dark:sm:hover:bg-gray-800/50;
+		@apply relative space-y-6 rounded-lg p-0 transition after:absolute after:-top-2 after:left-2 after:-z-10 after:h-full after:w-full after:rounded-lg after:border after:border-green-300 after:bg-white/30 after:opacity-0 after:transition-all after:duration-200 after:ease-out after:content-[''] dark:after:border-green-600 dark:after:bg-transparent sm:bg-green-100 sm:px-10 sm:py-8 sm:hover:bg-green-200 sm:hover:after:opacity-100 dark:sm:bg-gray-800/50 dark:sm:hover:bg-gray-800/90;
 	}
 	.card-title {
-		@apply h6 flex items-center font-bold transition group-hover:text-green-600 dark:group-hover:text-green-100;
+		@apply flex items-center text-lg font-bold transition group-hover:text-green-600 dark:group-hover:text-green-100 md:text-xl;
 	}
 	.card a:not(.stretched-link) {
 		@apply relative z-20;
+	}
+
+	/* SIDEBAR */
+	#nav-main li {
+		@apply flex items-center justify-start;
+	}
+	#nav-main a {
+		@apply inline-block border-b-2 font-bold;
+	}
+	#nav-main a:not(.active) {
+		@apply hvr-underline-from-left border-transparent text-black/70 hover:text-black/90 dark:text-green-100/50 dark:hover:text-green-100;
+	}
+	.active {
+		@apply border-green-400 text-black dark:text-green-100;
+	}
+
+	/* HOVER EFFECT */
+	.hvr-underline-from-left {
+		@apply relative inline-block align-middle;
+		-webkit-transform: perspective(1px) translateZ(0);
+		transform: perspective(1px) translateZ(0);
+	}
+	.hvr-underline-from-left:before {
+		@apply absolute -bottom-0.5 left-0 right-full z-10 h-0.5 bg-green-400 transition-[right] duration-300 ease-out content-[''] dark:bg-green-400;
+	}
+	.hvr-underline-from-left:hover:before,
+	.hvr-underline-from-left:focus:before,
+	.hvr-underline-from-left:active:before {
+		@apply right-0;
 	}
 }

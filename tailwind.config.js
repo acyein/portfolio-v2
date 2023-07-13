@@ -6,7 +6,6 @@ module.exports = {
     content: [
         '*.html',
         './js/app.js',
-        './node_modules/flowbite/**/*.js'
     ],
     theme: {
         container: {
@@ -38,14 +37,7 @@ module.exports = {
                     '900': '#00261a'
                 }
             },
-            backgroundImage: {
-                'gradient-black': 'linear-gradient(344deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%)',
-                'gradient-lightgreen': 'radial-gradient(circle, rgba(230,237,235,1) 0%, rgba(191,211,205,1) 100%)',
-                'gradient-darkgreen': 'radial-gradient(circle, rgba(0,38,26,1) 0%, rgba(0,77,54,1) 100%)',
-            }
         }
     },
-    plugins: [
-        require('flowbite/plugin')
-    ],
+    plugins: [],
 }
