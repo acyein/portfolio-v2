@@ -12,9 +12,9 @@
 	#header__indeterminate {
 		@apply hidden;
 	}
-	html[color-theme='dark'] #header__moon,
-	html[color-theme='light'] #header__sun,
-	html[color-theme='system'] #header__indeterminate {
+	html[color-theme="dark"] #header__moon,
+	html[color-theme="light"] #header__sun,
+	html[color-theme="system"] #header__indeterminate {
 		@apply block;
 	}
 	h1,
@@ -30,25 +30,28 @@
 
 @layer components {
 	.link-primary {
-		@apply border-b border-green-400 font-bold no-underline transition hover:border-b-2 dark:text-green-100;
+		@apply border-b-2 border-green-400 font-bold transition-all duration-200 hover:border-transparent hover:bg-green-200 dark:border-green-500 dark:font-normal dark:text-green-100 dark:hover:border-transparent dark:hover:!bg-green-600 dark:hover:text-green-200;
 	}
-	.icon-link-black {
-		@apply transition hover:text-black/70 dark:text-inherit dark:hover:text-green-100;
+	.icon-link-primary {
+		@apply transition hover:text-green-600 dark:text-inherit dark:hover:text-green-100;
 	}
 	.stretched-link {
 		@apply before:absolute before:left-0 before:top-0 before:z-10 before:h-full before:w-full before:content-none sm:before:content-[''];
 	}
 	.tag-green {
-		@apply flex items-center rounded-full bg-green-200 px-3 py-1 text-sm font-bold text-green-500 transition group-hover:bg-green-100 dark:bg-green-600 dark:text-green-200 dark:group-hover:bg-green-600;
+		@apply flex items-center rounded-full bg-green-200/60 px-3 py-1 text-sm font-bold text-green-500 transition dark:bg-green-600 dark:text-green-200 dark:group-hover:bg-green-600 sm:group-hover:bg-green-50;
 	}
 	.card {
-		@apply relative space-y-6 rounded-lg p-0 transition after:absolute after:-top-2 after:left-2 after:-z-10 after:h-full after:w-full after:rounded-lg after:border after:border-green-300 after:bg-white/30 after:opacity-0 after:transition-all after:duration-200 after:ease-out after:content-[''] dark:after:border-green-600 dark:after:bg-transparent sm:bg-green-100 sm:px-10 sm:py-8 sm:hover:bg-green-200 sm:hover:after:opacity-100 dark:sm:bg-gray-800/50 dark:sm:hover:bg-gray-800/90;
+		@apply relative space-y-6 rounded-lg p-0 transition duration-300 ease-out sm:bg-green-100 sm:px-10 sm:py-8 sm:hover:-translate-y-1 sm:hover:scale-[1.005] sm:hover:transform sm:hover:bg-green-200/60 sm:hover:shadow-xl sm:hover:after:opacity-100 sm:active:translate-y-0 dark:sm:bg-gray-900 dark:sm:hover:bg-gray-800;
 	}
 	.card-title {
 		@apply flex items-center text-lg font-bold transition group-hover:text-green-600 dark:group-hover:text-green-100 md:text-xl;
 	}
 	.card a:not(.stretched-link) {
 		@apply relative z-20;
+	}
+	.card .link-primary {
+		@apply hover:bg-green-300/80;
 	}
 
 	/* SIDEBAR */

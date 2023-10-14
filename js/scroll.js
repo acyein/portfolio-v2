@@ -1,4 +1,4 @@
-let sections = document.querySelectorAll('section');
+let sections = document.querySelectorAll('#about, #projects');
 let navLinks = document.querySelectorAll('#nav-main a');
 
 if (window.matchMedia('(min-width: 1024px)').matches) {
