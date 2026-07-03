@@ -5,13 +5,13 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="author" content="Ang Chian Yein" />
-		<meta name="description" content="A psychology graduate turned web developer with 3 years of experience in web development, especially in frontend design." />
-		<meta name="keywords" content="portfolio, web developer, frontend, Brunei" />
+		<meta name="description" content="A psychology graduate turned web developer, specialising in frontend development." />
+		<meta name="keywords" content="portfolio, web developer, frontend developer" />
 		<meta property="og:title" content="Ang Chian Yein" />
 		<meta property="og:type" content="website" />
 		<meta property="og:image" content="" />
 		<meta property="og:url" content="" />
-		<meta property="og:description" content="A psychology graduate turned web developer with 3 years of experience in web development, specialising in frontend design." />
+		<meta property="og:description" content="A psychology graduate turned web developer, specialising in frontend development." />
 
 		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -21,7 +21,7 @@
 		<meta name="msapplication-TileColor" content="#ffc40d" />
 		<meta name="theme-color" content="#e6edeb" />
 
-		<title>Ang Chian Yein &bull; Frontend Web Developer</title>
+    <title>Ang Chian Yein &bull; Frontend Developer</title>
 
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -29,15 +29,15 @@
 
 		<link href="css/output.css" rel="stylesheet" />
 
-		<script>
-			// On page load or when changing themes, best to add inline in `head` to avoid FOUC
-			if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-				document.documentElement.classList.add('dark');
-			} else {
-				document.documentElement.classList.remove('dark');
-			}
-		</script>
-	</head>
+    <script>
+      // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+      if (localStorage.getItem("color-theme") === "dark" || (!("color-theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    </script>
+  </head>
 
 	<body class="min-h-screen bg-green-100/30 px-4 font-primary text-black/90 antialiased selection:bg-green-200 dark:bg-gray-950 dark:text-green-100/70 dark:selection:bg-green-600/80 dark:selection:text-green-100/90 sm:px-6 md:px-10">
 		<div class="space-between mx-auto flex min-h-screen max-w-7xl flex-col lg:flex-row">
@@ -183,192 +183,354 @@
 					</div>
 				</header>
 
-				<!-- PROJECTS -->
-				<main id="projects" class="mx-auto space-y-12 md:space-y-16 lg:scroll-mt-20">
-					<h2 class="font-secondary text-4xl md:text-5xl">Projects</h2>
-					<div class="space-y-16">
-						<!-- NOTIFICATIONS PAGE -->
-						<div class="relative space-y-6">
-							<div class="card group">
-								<a class="card-title stretched-link" href="https://notifications-page-acyein.vercel.app/" aria-label="Notifications page" target="_blank">
-									<h3>Notifications Page</h3>
-									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="ml-1.5 h-5 w-5 transition group-hover:-translate-y-1 group-hover:translate-x-1">
-										<path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd" />
-									</svg>
-								</a>
-								<div class="grid gap-6 sm:gap-10 md:grid-cols-2 lg:gap-16">
-									<img src="assets/img/notifications-page.webp" class="shadow-md md:shadow-lg" alt="Preview of notifications page" />
-									<div class="flex flex-col justify-start gap-y-4 md:gap-y-6">
-										<div class="flex flex-wrap items-center justify-between gap-4">
-											<ul class="flex flex-wrap gap-x-1.5 gap-y-2">
-												<li class="tag-green">React</li>
-												<li class="tag-green">Next.js</li>
-												<li class="tag-green">Tailwind CSS</li>
-											</ul>
-											<a href="https://github.com/acyein/notifications-page" class="icon-link-primary flex items-center" aria-label="Source Code on GitHub" target="_blank">
-												<svg class="h-7 w-7" fill="currentColor" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-													<title>Source Code on GitHub</title>
-													<path
-														d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
-													/>
-												</svg>
-											</a>
-										</div>
-										<div class="space-y-4">
-											<p>A notifications page allowing users to mark unread notifications as read by selecting 'mark all as read'.</p>
-											<p>
-												This project was completed as part of the
-												<a href="https://www.frontendmentor.io/challenges/notifications-page-DqK5QAmKbC" class="link-primary" aria-label="Notifications page challenge on Frontend Mentor" target="_blank">Notifications page challenge on Frontend Mentor</a>.
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
+        <!-- PROJECTS -->
+        <main id="projects" class="mx-auto space-y-12 md:space-y-16 lg:scroll-mt-20">
 
-						<!-- ADVICE GENERATOR APP -->
-						<div class="relative space-y-6">
-							<div class="card group">
-								<a class="card-title stretched-link" href="https://acyein.github.io/advice-generator-app/" aria-label="Advice generator app" target="_blank">
-									<h3>Advice Generator App</h3>
-									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="ml-1.5 h-5 w-5 transition group-hover:-translate-y-1 group-hover:translate-x-1">
-										<path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd" />
-									</svg>
-								</a>
-								<div class="grid gap-6 sm:gap-10 md:grid-cols-2 lg:gap-16">
-									<img src="./assets/img/advice-generator-app.webp" class="shadow-md md:shadow-lg" alt="Preview of advice generator app" />
-									<div class="flex flex-col justify-start gap-y-4 md:gap-y-6">
-										<div class="flex flex-wrap items-center justify-between gap-4">
-											<ul class="flex flex-wrap gap-x-1.5 gap-y-2">
-												<li class="tag-green">HTML</li>
-												<li class="tag-green">Tailwind CSS</li>
-												<li class="tag-green">JavaScript</li>
-											</ul>
-											<a href="https://github.com/acyein/advice-generator-app" class="icon-link-primary flex items-center" aria-label="Source Code on GitHub" target="_blank">
-												<svg class="h-7 w-7" fill="currentColor" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-													<title>Source Code on GitHub</title>
-													<path
-														d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
-													/>
-												</svg>
-											</a>
-										</div>
-										<div class="space-y-4">
-											<p>
-												A web app that generates a new piece of advice when user clicks on the dice button. In this project, I learnt how to fetch data from
-												<a href="https://api.adviceslip.com/advice" class="link-primary" title="Advice Slip JSON API" aria-label="Advice Slip JSON API" target="_blank">a public API</a>
-												and how to add a loader while waiting for data to load.
-											</p>
-											<p>
-												This project was completed as part of the
-												<a href="https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db" class="link-primary" aria-label="Advice generator app challenge on Frontend Mentor" target="_blank">Advice generator app challenge on Frontend Mentor</a>.
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
+          <div class="space-y-16">
+            <!-- VANDURE -->
+            <div class="relative space-y-6">
+              <div class="card group">
+                <a
+                  class="card-title stretched-link"
+                  href="https://vandure-dev.netlify.app/"
+                  aria-label="Vandure website"
+                  target="_blank"
+                >
+                  <h3>Vandure</h3>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    class="ml-1.5 h-5 w-5 transition group-hover:-translate-y-1 group-hover:translate-x-1"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+                <div class="grid gap-6 sm:gap-10 md:grid-cols-2 lg:gap-16">
+                  <img
+                    src="./assets/img/vandure.webp"
+                    class="shadow-md md:shadow-lg"
+                    alt="Preview of Vandure website"
+                  />
+                  <div class="flex flex-col justify-start gap-y-4 md:gap-y-6">
+                    <div class="flex flex-wrap items-center justify-between gap-4">
+                      <ul class="flex flex-wrap gap-x-1.5 gap-y-2">
+                        <li class="tag-green">HTML</li>
+                        <li class="tag-green">SCSS</li>
+                        <li class="tag-green">Bootstrap</li>
+                        <li class="tag-green">jQuery</li>
+                      </ul>
+                    </div>
+                    <div class="space-y-4">
+                      <p>A landing page for Vandure who provides an online platform for small businesses and individuals in Malaysia to sell their products and services.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-						<!-- BLOOMING HOTEL -->
-						<div class="relative space-y-6">
-							<div class="card group">
-								<a class="card-title stretched-link" href="https://bloominghotel.netlify.app/" aria-label="Blooming Hotel website" target="_blank">
-									<h3>Blooming Hotel</h3>
-									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="ml-1.5 h-5 w-5 transition group-hover:-translate-y-1 group-hover:translate-x-1">
-										<path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd" />
-									</svg>
-								</a>
-								<div class="grid gap-6 sm:gap-10 md:grid-cols-2 lg:gap-16">
-									<img src="./assets/img/blooming-hotel.webp" class="shadow-md md:shadow-lg" alt="Preview of Blooming Hotel website" />
-									<div class="flex flex-col justify-start gap-y-4 md:gap-y-6">
-										<div class="flex flex-wrap items-center justify-between gap-4">
-											<ul class="flex flex-wrap gap-x-1.5 gap-y-2">
-												<li class="tag-green">HTML</li>
-												<li class="tag-green">CSS</li>
-											</ul>
-											<a href="https://github.com/acyein/modern-html-css/tree/master/04-HotelWebsite" class="icon-link-primary flex items-center" aria-label="Source Code on GitHub" target="_blank">
-												<svg class="h-7 w-7" fill="currentColor" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-													<title>Source Code on GitHub</title>
-													<path
-														d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
-													/>
-												</svg>
-											</a>
-										</div>
-										<div class="space-y-4">
-											<p>A mock website built to practise mobile-responsive design, especially the use of flexbox.</p>
-											<p>This project was completed as part of an <a href="https://www.udemy.com/course/modern-html-css-from-the-beginning/" title="Modern HTML & CSS From The Beginning (Including SCSS) course" aria-label="Modern HTML & CSS From The Beginning (Including SCSS) course" class="link-primary" target="_blank">online web development course</a>.</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
+            <!-- NOTIFICATIONS PAGE -->
+            <div class="relative space-y-6">
+              <div class="card group">
+                <a
+                  class="card-title stretched-link"
+                  href="https://notifications-page-acyein.vercel.app/"
+                  aria-label="Notifications page"
+                  target="_blank"
+                >
+                  <h3>Notifications Page</h3>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    class="ml-1.5 h-5 w-5 transition group-hover:-translate-y-1 group-hover:translate-x-1"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+                <div class="grid gap-6 sm:gap-10 md:grid-cols-2 lg:gap-16">
+                  <img
+                    src="assets/img/notifications-page.webp"
+                    class="shadow-md md:shadow-lg"
+                    alt="Preview of notifications page"
+                  />
+                  <div class="flex flex-col justify-start gap-y-4 md:gap-y-6">
+                    <div class="flex flex-wrap items-center justify-between gap-4">
+                      <ul class="flex flex-wrap gap-x-1.5 gap-y-2">
+                        <li class="tag-green">React</li>
+                        <li class="tag-green">Next.js</li>
+                        <li class="tag-green">Tailwind CSS</li>
+                      </ul>
+                      <a
+                        href="https://github.com/acyein/notifications-page"
+                        class="icon-link-primary flex items-center"
+                        aria-label="Source Code on GitHub"
+                        target="_blank"
+                      >
+                        <svg
+                          class="h-7 w-7"
+                          fill="currentColor"
+                          role="img"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <title>Source Code on GitHub</title>
+                          <path
+                            d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                    <div class="space-y-4">
+                      <p>A notifications page allowing users to mark unread notifications as read by selecting 'mark all as read'.</p>
+                      <p>
+                        This project was completed as part of the
+                        <a
+                          href="https://www.frontendmentor.io/challenges/notifications-page-DqK5QAmKbC"
+                          class="link-primary"
+                          aria-label="Notifications page challenge on Frontend Mentor"
+                          target="_blank"
+                          >Notifications page challenge on Frontend Mentor</a
+                        >.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-						<!-- TICK ME -->
-						<div class="relative space-y-6">
-							<div class="card group">
-								<a class="card-title stretched-link" href="https://todo-yein.onrender.com/" aria-label="Blooming Hotel website" target="_blank">
-									<h3>Tick Me</h3>
-									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="ml-1.5 h-5 w-5 transition group-hover:-translate-y-1 group-hover:translate-x-1">
-										<path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd" />
-									</svg>
-								</a>
-								<div class="grid gap-6 sm:gap-10 md:grid-cols-2 lg:gap-16">
-									<img src="./assets/img/tick-me.webp" class="shadow-md md:shadow-lg" alt="Preview of Tick Me app" />
-									<div class="flex flex-col justify-start gap-y-4 md:gap-y-6">
-										<div class="flex flex-wrap items-center justify-between gap-4">
-											<ul class="flex flex-wrap gap-x-1.5 gap-y-2">
-												<li class="tag-green">React</li>
-												<li class="tag-green">Node.js</li>
-												<li class="tag-green">CSS</li>
-											</ul>
-											<a href="https://github.com/acyein/todo-app" class="icon-link-primary flex items-center" aria-label="Source Code on GitHub" target="_blank">
-												<svg class="h-7 w-7" fill="currentColor" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-													<title>Source Code on GitHub</title>
-													<path
-														d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
-													/>
-												</svg>
-											</a>
-										</div>
-										<div class="space-y-4">
-											<p>A to-do web app enabling users to add new tasks, mark completed tasks, and filter the list to display uncompleted tasks.</p>
-											<p>This project was completed as part of an <a href="https://www.aiti.gov.bn/development/codingbn/" title="Coding.bn website" aria-label="Coding.bn website" class="link-primary" target="_blank">upskill programme</a>.</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
+            <!-- TICK ME -->
+            <div class="relative space-y-6">
+              <div class="card group">
+                <a
+                  class="card-title stretched-link"
+                  href="https://todo-yein.onrender.com/"
+                  aria-label="Blooming Hotel website"
+                  target="_blank"
+                >
+                  <h3>Tick Me</h3>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    class="ml-1.5 h-5 w-5 transition group-hover:-translate-y-1 group-hover:translate-x-1"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+                <div class="grid gap-6 sm:gap-10 md:grid-cols-2 lg:gap-16">
+                  <img
+                    src="./assets/img/tick-me.webp"
+                    class="shadow-md md:shadow-lg"
+                    alt="Preview of Tick Me app"
+                  />
+                  <div class="flex flex-col justify-start gap-y-4 md:gap-y-6">
+                    <div class="flex flex-wrap items-center justify-between gap-4">
+                      <ul class="flex flex-wrap gap-x-1.5 gap-y-2">
+                        <li class="tag-green">React</li>
+                        <li class="tag-green">Node.js</li>
+                        <li class="tag-green">CSS</li>
+                      </ul>
+                      <a
+                        href="https://github.com/acyein/todo-app"
+                        class="icon-link-primary flex items-center"
+                        aria-label="Source Code on GitHub"
+                        target="_blank"
+                      >
+                        <svg
+                          class="h-7 w-7"
+                          fill="currentColor"
+                          role="img"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <title>Source Code on GitHub</title>
+                          <path
+                            d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                    <div class="space-y-4">
+                      <p>A to-do web app enabling users to add new tasks, mark tasks as completed, and filter the task list to display uncompleted tasks.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-						<!-- VANDURE -->
-						<div class="relative space-y-6">
-							<div class="card group">
-								<a class="card-title stretched-link" href="https://vandure-dev.netlify.app/" aria-label="Vandure website" target="_blank">
-									<h3>Vandure</h3>
-									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="ml-1.5 h-5 w-5 transition group-hover:-translate-y-1 group-hover:translate-x-1">
-										<path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd" />
-									</svg>
-								</a>
-								<div class="grid gap-6 sm:gap-10 md:grid-cols-2 lg:gap-16">
-									<img src="./assets/img/vandure.webp" class="shadow-md md:shadow-lg" alt="Preview of Vandure website" />
-									<div class="flex flex-col justify-start gap-y-4 md:gap-y-6">
-										<div class="flex flex-wrap items-center justify-between gap-4">
-											<ul class="flex flex-wrap gap-x-1.5 gap-y-2">
-												<li class="tag-green">HTML</li>
-												<li class="tag-green">SCSS</li>
-												<li class="tag-green">Bootstrap</li>
-												<li class="tag-green">jQuery</li>
-											</ul>
-										</div>
-										<div class="space-y-4">
-											<p>A start-up for small businesses and individuals in Malaysia to showcase and sell their products and services.</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</main>
+            <!-- ADVICE GENERATOR APP -->
+            <div class="relative space-y-6">
+              <div class="card group">
+                <a
+                  class="card-title stretched-link"
+
+                  aria-label="Advice generator app"
+                  target="_blank"
+                >
+                  <h3>Advice Generator App</h3>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    class="ml-1.5 h-5 w-5 transition group-hover:-translate-y-1 group-hover:translate-x-1"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+                <div class="grid gap-6 sm:gap-10 md:grid-cols-2 lg:gap-16">
+                  <img
+                    src="./assets/img/advice-generator-app.webp"
+                    class="shadow-md md:shadow-lg"
+                    alt="Preview of advice generator app"
+                  />
+                  <div class="flex flex-col justify-start gap-y-4 md:gap-y-6">
+                    <div class="flex flex-wrap items-center justify-between gap-4">
+                      <ul class="flex flex-wrap gap-x-1.5 gap-y-2">
+                        <li class="tag-green">HTML</li>
+                        <li class="tag-green">Tailwind CSS</li>
+                        <li class="tag-green">JavaScript</li>
+                      </ul>
+                      <a
+                        href="https://github.com/acyein/advice-generator-app"
+                        class="icon-link-primary flex items-center"
+                        aria-label="Source Code on GitHub"
+                        target="_blank"
+                      >
+                        <svg
+                          class="h-7 w-7"
+                          fill="currentColor"
+                          role="img"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <title>Source Code on GitHub</title>
+                          <path
+                            d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                    <div class="space-y-4">
+                      <p>
+                        A generator that churns out a piece of advice. In this project, I learnt the process of fetching data from
+                        <a
+                          href="https://api.adviceslip.com/advice"
+                          class="link-primary"
+                          title="Advice Slip JSON API"
+                          aria-label="Advice Slip JSON API"
+                          target="_blank"
+                          >a public API</a
+                        >
+                        and adding a loader while data is being fetched.
+                      </p>
+                      <p>
+                        This project was completed as part of the
+                        <a
+                          href="https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db"
+                          class="link-primary"
+                          aria-label="Advice generator app challenge on Frontend Mentor"
+                          target="_blank"
+                          >Advice generator app challenge on Frontend Mentor</a
+                        >.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- BLOOMING HOTEL -->
+            <div class="relative space-y-6">
+              <div class="card group">
+                <a
+                  class="card-title stretched-link"
+
+                  aria-label="Blooming Hotel website"
+                  target="_blank"
+                >
+                  <h3>Blooming Hotel</h3>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    class="ml-1.5 h-5 w-5 transition group-hover:-translate-y-1 group-hover:translate-x-1"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+                <div class="grid gap-6 sm:gap-10 md:grid-cols-2 lg:gap-16">
+                  <img
+                    src="./assets/img/blooming-hotel.webp"
+                    class="shadow-md md:shadow-lg"
+                    alt="Preview of Blooming Hotel website"
+                  />
+                  <div class="flex flex-col justify-start gap-y-4 md:gap-y-6">
+                    <div class="flex flex-wrap items-center justify-between gap-4">
+                      <ul class="flex flex-wrap gap-x-1.5 gap-y-2">
+                        <li class="tag-green">HTML</li>
+                        <li class="tag-green">CSS</li>
+                      </ul>
+                      <a
+                        href="https://github.com/acyein/modern-html-css/tree/master/04-HotelWebsite"
+                        class="icon-link-primary flex items-center"
+                        aria-label="Source Code on GitHub"
+                        target="_blank"
+                      >
+                        <svg
+                          class="h-7 w-7"
+                          fill="currentColor"
+                          role="img"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <title>Source Code on GitHub</title>
+                          <path
+                            d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                    <div class="space-y-4">
+                      <p>A mock website for a fictional hotel built with a focus on reponsive design and features a functional contact form.</p>
+                      <p>
+                        This project was completed as part of an
+                        <a
+                          href="https://www.udemy.com/course/modern-html-css-from-the-beginning/"
+                          title="Modern HTML & CSS From The Beginning (Including SCSS) course"
+                          aria-label="Modern HTML & CSS From The Beginning (Including SCSS) course"
+                          class="link-primary"
+                          target="_blank"
+                          >online web development course</a
+                        >.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
 
 				<footer class="w-full text-center text-sm">
 					<p>Built with <a href="https://tailwindcss.com/" class="link-primary" target="_blank">Tailwind CSS</a>. Deployed on <a href="https://www.netlify.com/" class="link-primary" target="_blank">Netlify</a>.</p>
